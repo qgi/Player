@@ -19,11 +19,9 @@ typedef enum
 	ERR_FILE_IO,
 	ERR_HEADER,
 	ERR_FORMAT,
-	ERR_CHANNELS,
-	ERR_BPS,
 	ERR_DATA,
 	ERR_MEM
 	
 } ERR_IMPORT;
 
-ERR_IMPORT readWavFile(char szFileName[], ALuint uBuffer);
+ERR_IMPORT readWavFile(const char szFileName[], ALuint uBuffer);

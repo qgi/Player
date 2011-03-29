@@ -1,11 +1,12 @@
 TPlayer
 v7
 r0
-t322945826.083141
+t323121542.522715
 cCheck dependencies
-cCompileC build/Player.build/Debug/Player.build/Objects-normal/x86_64/main.o /Users/qgi/Documents/Code/qgi/C/Player/Player/main.c normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/Player.build/Debug/Player.build/Objects-normal/x86_64/FileHelpers.o /Users/qgi/Documents/Code/qgi/C/Player/Player/FileHelpers.c normal x86_64 c com.apple.compilers.gcc.4_2
-cLd /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug/Player normal x86_64
+cCompileC build/Player.build/Debug/Player.build/Objects-normal/x86_64/main.o /Users/qgi/Documents/Code/git/Player/main.c normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/Player.build/Debug/Player.build/Objects-normal/x86_64/FileHelpers.o /Users/qgi/Documents/Code/git/Player/FileHelpers.c normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/Player.build/Debug/Player.build/Objects-normal/x86_64/Importer.o /Users/qgi/Documents/Code/git/Player/Importer.c normal x86_64 c com.apple.compilers.gcc.4_2
+cLd /Users/qgi/Documents/Code/git/Player/build/Debug/Player normal x86_64
 
 N/Developer/SDKs/MacOSX10.6.sdk
 c000000004A769DAB00000000000000EE
@@ -42,6 +43,70 @@ c000000004A5C14A70000000000002DF5
 t1247548583
 s11765
 
+N/Users/qgi/Documents/Code/git/Player/FileHelpers.c
+c000000004D9239B70000000000000200
+t1301428663
+s512
+i"FileHelpers.h"
+
+N/Users/qgi/Documents/Code/git/Player/FileHelpers.h
+c000000004D90F47A000000000000014B
+t1301345402
+s331
+i<stdio.h>
+i"Globals.h"
+
+N/Users/qgi/Documents/Code/git/Player/Globals.h
+c000000004D90F47A0000000000000087
+t1301345402
+s135
+
+N/Users/qgi/Documents/Code/git/Player/Importer.c
+c000000004D9239F800000000000007E9
+t1301428728
+s2025
+i"Importer.h"
+
+N/Users/qgi/Documents/Code/git/Player/Importer.h
+c000000004D9231BA000000000000014D
+t1301426618
+s333
+i<stdio.h>
+i<stdlib.h>
+i"OpenAL/al.h"
+i"FileHelpers.h"
+
+N/Users/qgi/Documents/Code/git/Player/build/Debug/Player
+t1301428742
+s15680
+
+N/Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/FileHelpers.o
+t1301428742
+s4484
+
+N/Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/Importer.o
+t1301428742
+s5784
+
+N/Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/Player.LinkFileList
+c000000004D923A060000000000000143
+t1301428742
+s323
+
+N/Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/main.o
+t1301428742
+s5648
+
+N/Users/qgi/Documents/Code/git/Player/main.c
+c000000004D90F74400000000000005CC
+t1301346116
+s1484
+i<stdio.h>
+i"OpenAL/alc.h"
+i"OpenAL/al.h"
+i"Globals.h"
+i"Importer.h"
+
 N/Users/qgi/Documents/Code/qgi/C/Player/Player/ALPlayer.c
 c000000004D8F7C5F0000000000000000
 t1301249119
@@ -53,9 +118,9 @@ t1301249082
 s129
 
 N/Users/qgi/Documents/Code/qgi/C/Player/Player/FileHelpers.c
-c000000004D8F88540000000000000379
-t1301252180
-s889
+c000000004D8F947200000000000003A4
+t1301255282
+s932
 i"FileHelpers.h"
 
 N/Users/qgi/Documents/Code/qgi/C/Player/Player/FileHelpers.h
@@ -77,7 +142,7 @@ t1301249302
 s180
 
 N/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug/Player
-t1301253026
+t1301256081
 s15448
 
 N/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/ALPlayer.o
@@ -85,8 +150,8 @@ t2
 s0
 
 N/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/FileHelpers.o
-t1301253026
-s5212
+t1301255282
+s5148
 
 N/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/Globals.o
 t2
@@ -98,13 +163,13 @@ t1301253026
 s233
 
 N/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/main.o
-t1301253026
-s7532
+t1301256080
+s7756
 
 N/Users/qgi/Documents/Code/qgi/C/Player/Player/main.c
-c000000004D8F8B8F0000000000000792
-t1301253007
-s1938
+c000000004D8F97F70000000000000800
+t1301256183
+s2048
 i<stdio.h>
 i<stdlib.h>
 i"OpenAL/alc.h"
@@ -114,14 +179,27 @@ i"FileHelpers.h"
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies322945826#322945826#0(0"0(0#1#0"8602617696#0"0#
+lSLF07#2@18"Check dependencies323121542#323121542#0(0"0(0#1#0"8615233056#0"0#
 
 CCompileC build/Player.build/Debug/Player.build/Objects-normal/x86_64/ALPlayer.o /Users/qgi/Documents/Code/qgi/C/Player/Player/ALPlayer.c normal x86_64 c com.apple.compilers.gcc.4_2
 r0
 
+CCompileC build/Player.build/Debug/Player.build/Objects-normal/x86_64/FileHelpers.o /Users/qgi/Documents/Code/git/Player/FileHelpers.c normal x86_64 c com.apple.compilers.gcc.4_2
+s323121542.440580
+e323121542.471132
+r1
+xCompileC
+xbuild/Player.build/Debug/Player.build/Objects-normal/x86_64/FileHelpers.o
+x/Users/qgi/Documents/Code/git/Player/FileHelpers.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@58"Compile /Users/qgi/Documents/Code/git/Player/FileHelpers.c323121542#323121542#0(0"0(0#0#50"/Users/qgi/Documents/Code/git/Player/FileHelpers.c8603811776#1244"    cd /Users/qgi/Documents/Code/git/Player    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Player-generated-files.hmap -I/Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Player-own-target-headers.hmap -I/Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Player-all-target-headers.hmap -iquote /Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Player-project-headers.hmap -F/Users/qgi/Documents/Code/git/Player/build/Debug -I/Users/qgi/Documents/Code/git/Player/build/Debug/include -I/Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/DerivedSources/x86_64 -I/Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/DerivedSources -c /Users/qgi/Documents/Code/git/Player/FileHelpers.c -o /Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/FileHelpers.o0#
+
 CCompileC build/Player.build/Debug/Player.build/Objects-normal/x86_64/FileHelpers.o /Users/qgi/Documents/Code/qgi/C/Player/Player/FileHelpers.c normal x86_64 c com.apple.compilers.gcc.4_2
-s322945826.022775
-e322945826.054332
+s322948083.754351
+e322948083.755157
 r1
 xCompileC
 xbuild/Player.build/Debug/Player.build/Objects-normal/x86_64/FileHelpers.o
@@ -130,14 +208,40 @@ xnormal
 xx86_64
 xc
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@67"Compile /Users/qgi/Documents/Code/qgi/C/Player/Player/FileHelpers.c322945826#322945826#0(0"0(0#0#59"/Users/qgi/Documents/Code/qgi/C/Player/Player/FileHelpers.c8615772416#1343"    cd /Users/qgi/Documents/Code/qgi/C/Player/Player    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Player-generated-files.hmap -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Player-own-target-headers.hmap -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Player-all-target-headers.hmap -iquote /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Player-project-headers.hmap -F/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug/include -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/DerivedSources/x86_64 -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/DerivedSources -c /Users/qgi/Documents/Code/qgi/C/Player/Player/FileHelpers.c -o /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/FileHelpers.o0#
+lSLF07#2@67"Compile /Users/qgi/Documents/Code/qgi/C/Player/Player/FileHelpers.c322948083#322948083#0(0"0(0#0#59"/Users/qgi/Documents/Code/qgi/C/Player/Player/FileHelpers.c8611359520#1343"    cd /Users/qgi/Documents/Code/qgi/C/Player/Player    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Player-generated-files.hmap -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Player-own-target-headers.hmap -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Player-all-target-headers.hmap -iquote /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Player-project-headers.hmap -F/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug/include -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/DerivedSources/x86_64 -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/DerivedSources -c /Users/qgi/Documents/Code/qgi/C/Player/Player/FileHelpers.c -o /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/FileHelpers.o0#
 
 CCompileC build/Player.build/Debug/Player.build/Objects-normal/x86_64/Globals.o /Users/qgi/Documents/Code/qgi/C/Player/Player/Globals.c normal x86_64 c com.apple.compilers.gcc.4_2
 r0
 
+CCompileC build/Player.build/Debug/Player.build/Objects-normal/x86_64/Importer.o /Users/qgi/Documents/Code/git/Player/Importer.c normal x86_64 c com.apple.compilers.gcc.4_2
+s323121542.471228
+e323121542.507590
+r1
+xCompileC
+xbuild/Player.build/Debug/Player.build/Objects-normal/x86_64/Importer.o
+x/Users/qgi/Documents/Code/git/Player/Importer.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@55"Compile /Users/qgi/Documents/Code/git/Player/Importer.c323121542#323121542#0(0"0(0#0#47"/Users/qgi/Documents/Code/git/Player/Importer.c8602956512#1238"    cd /Users/qgi/Documents/Code/git/Player    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Player-generated-files.hmap -I/Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Player-own-target-headers.hmap -I/Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Player-all-target-headers.hmap -iquote /Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Player-project-headers.hmap -F/Users/qgi/Documents/Code/git/Player/build/Debug -I/Users/qgi/Documents/Code/git/Player/build/Debug/include -I/Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/DerivedSources/x86_64 -I/Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/DerivedSources -c /Users/qgi/Documents/Code/git/Player/Importer.c -o /Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/Importer.o0#
+
+CCompileC build/Player.build/Debug/Player.build/Objects-normal/x86_64/main.o /Users/qgi/Documents/Code/git/Player/main.c normal x86_64 c com.apple.compilers.gcc.4_2
+s323121542.439539
+e323121542.494699
+r1
+xCompileC
+xbuild/Player.build/Debug/Player.build/Objects-normal/x86_64/main.o
+x/Users/qgi/Documents/Code/git/Player/main.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@51"Compile /Users/qgi/Documents/Code/git/Player/main.c323121542#323121542#0(0"0(0#0#43"/Users/qgi/Documents/Code/git/Player/main.c8609694176#1230"    cd /Users/qgi/Documents/Code/git/Player    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Player-generated-files.hmap -I/Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Player-own-target-headers.hmap -I/Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Player-all-target-headers.hmap -iquote /Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Player-project-headers.hmap -F/Users/qgi/Documents/Code/git/Player/build/Debug -I/Users/qgi/Documents/Code/git/Player/build/Debug/include -I/Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/DerivedSources/x86_64 -I/Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/DerivedSources -c /Users/qgi/Documents/Code/git/Player/main.c -o /Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/main.o0#
+
 CCompileC build/Player.build/Debug/Player.build/Objects-normal/x86_64/main.o /Users/qgi/Documents/Code/qgi/C/Player/Player/main.c normal x86_64 c com.apple.compilers.gcc.4_2
-s322945826.021087
-e322945826.069332
+s322948881.327213
+e322948881.328105
 r1
 xCompileC
 xbuild/Player.build/Debug/Player.build/Objects-normal/x86_64/main.o
@@ -146,15 +250,25 @@ xnormal
 xx86_64
 xc
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@60"Compile /Users/qgi/Documents/Code/qgi/C/Player/Player/main.c322945826#322945826#0(0"0(0#0#52"/Users/qgi/Documents/Code/qgi/C/Player/Player/main.c8600785760#1329"    cd /Users/qgi/Documents/Code/qgi/C/Player/Player    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Player-generated-files.hmap -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Player-own-target-headers.hmap -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Player-all-target-headers.hmap -iquote /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Player-project-headers.hmap -F/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug/include -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/DerivedSources/x86_64 -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/DerivedSources -c /Users/qgi/Documents/Code/qgi/C/Player/Player/main.c -o /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/main.o0#
+lSLF07#2@60"Compile /Users/qgi/Documents/Code/qgi/C/Player/Player/main.c322948881#322948881#0(0"0(0#0#52"/Users/qgi/Documents/Code/qgi/C/Player/Player/main.c8612390336#1329"    cd /Users/qgi/Documents/Code/qgi/C/Player/Player    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Player-generated-files.hmap -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Player-own-target-headers.hmap -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Player-all-target-headers.hmap -iquote /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Player-project-headers.hmap -F/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug/include -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/DerivedSources/x86_64 -I/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/DerivedSources -c /Users/qgi/Documents/Code/qgi/C/Player/Player/main.c -o /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/main.o0#
+
+CLd /Users/qgi/Documents/Code/git/Player/build/Debug/Player normal x86_64
+s323121542.507680
+e323121542.522673
+r1
+xLd
+x/Users/qgi/Documents/Code/git/Player/build/Debug/Player
+xnormal
+xx86_64
+lSLF07#2@60"Link /Users/qgi/Documents/Code/git/Player/build/Debug/Player323121542#323121542#0(0"0(0#0#0"8599010976#520"    cd /Users/qgi/Documents/Code/git/Player    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/qgi/Documents/Code/git/Player/build/Debug -F/Users/qgi/Documents/Code/git/Player/build/Debug -filelist /Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/Player.LinkFileList -mmacosx-version-min=10.6 -framework OpenAL -framework OpenGL -o /Users/qgi/Documents/Code/git/Player/build/Debug/Player0#
 
 CLd /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug/Player normal x86_64
-s322945826.069408
-e322945826.083100
+s322948881.328212
+e322948881.343502
 r1
 xLd
 x/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug/Player
 xnormal
 xx86_64
-lSLF07#2@69"Link /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug/Player322945826#322945826#0(0"0(0#0#0"8618395488#565"    cd /Users/qgi/Documents/Code/qgi/C/Player/Player    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug -F/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug -filelist /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/Player.LinkFileList -mmacosx-version-min=10.6 -framework OpenAL -framework OpenGL -o /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug/Player0#
+lSLF07#2@69"Link /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug/Player322948881#322948881#0(0"0(0#0#0"8612348384#565"    cd /Users/qgi/Documents/Code/qgi/C/Player/Player    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug -F/Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug -filelist /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/Player.LinkFileList -mmacosx-version-min=10.6 -framework OpenAL -framework OpenGL -o /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug/Player0#
 

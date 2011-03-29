@@ -10,21 +10,31 @@
 
 #define PCM 0x0001
 
-ERR_IMPORT readWavFile(char szFileName[], ALuint uBuffer)
-{
-	
-	char *pDataBuffer;
-	long uDataBufferLength;
+//forward declarations
+ALenum alGetBufferFormat(unsigned short usBitsPerSample, unsigned short usChannels);
 
-	FILE* pFile;
-	long lFileSize;
+#pragma pack(1)
+struct WAVE_FORMAT
+{
+	unsigned int		uHeaderLength;
 	unsigned short int	usFormat;
 	unsigned short int	usChannels;
 	unsigned int		uSamplingRate;
+	unsigned int		uBytesPerSecond;
+	unsigned short int	usBlockAlign;
 	unsigned short int	usBitsPerSample;
-	ALenum alBufferFormat;
-	pFile = fopen(szFileName, "rb");
+} waveFormat;
+
+ERR_IMPORT readWavFile(const char szFileName[], ALuint uBuffer)
+{
 	
+	char *pDataBuffer;
+	unsigned int uDataBufferLength;
+	FILE* pFile;
+	long lFileSize;
+	ALenum alBufferFormat;
+	
+	pFile = fopen(szFileName, "rb");
 	if (!pFile)
 		return ERR_FILE_IO;
 
@@ -32,47 +42,21 @@ ERR_IMPORT readWavFile(char szFileName[], ALuint uBuffer)
 	
 	if(!bSkipPast(pFile, lFileSize, "WAVE") || !bSkipPast(pFile, lFileSize, "fmt "))
 		return ERR_HEADER;
-	
-	//skip header length (4bytes)
-	skipBytes(pFile, 4);
-	
-	usFormat = (unsigned int) iReadChunk(pFile, 2, TRUE);
-	
-	if (usFormat != PCM)
+
+	fread(&waveFormat, sizeof(char), sizeof(waveFormat), pFile);
+
+	if (waveFormat.usFormat != PCM)
 		return ERR_FORMAT;
 	
-	usChannels = (unsigned short int) iReadChunk(pFile, 2, TRUE);
-	if (usChannels<1 || usChannels >2)
-		return ERR_CHANNELS;
-	
-	uSamplingRate = (unsigned int) iReadChunk(pFile, 4, TRUE);
-	skipBytes(pFile, 6);
-	
-	usBitsPerSample = (unsigned short int) iReadChunk(pFile, 2, TRUE);
-	
-	if (usBitsPerSample == 8)
-	{
-		if (usChannels == 1)
-			alBufferFormat = AL_FORMAT_MONO8;
-		else 
-			alBufferFormat = AL_FORMAT_STEREO8;
-	}
-	else if (usBitsPerSample == 16)
-	{
-		if (usChannels == 1)
-			alBufferFormat = AL_FORMAT_MONO16;
-		else
-			alBufferFormat = AL_FORMAT_STEREO16;
-	}
-	else
-	{
-		return ERR_BPS;
-	}
-	
+	alBufferFormat = alGetBufferFormat(waveFormat.usBitsPerSample, waveFormat.usChannels);
+	if (alBufferFormat == AL_NONE)
+		return ERR_FORMAT;
+
 	if (!bSkipPast(pFile, lFileSize, "data"))
 		ERR_DATA;
-		
-	uDataBufferLength = (unsigned int) iReadChunk(pFile, 4, TRUE);
+	
+	fread(&uDataBufferLength, sizeof(uDataBufferLength), 1, pFile);
+	
 	if (uDataBufferLength<1)
 		return ERR_DATA;
 	
@@ -81,8 +65,31 @@ ERR_IMPORT readWavFile(char szFileName[], ALuint uBuffer)
 		return ERR_MEM;
 	
 	fread(pDataBuffer, sizeof(char), uDataBufferLength, pFile);
-	alBufferData(uBuffer, alBufferFormat, pDataBuffer, uDataBufferLength, uSamplingRate);
+	alBufferData(uBuffer, alBufferFormat, pDataBuffer, uDataBufferLength, waveFormat.uSamplingRate);
 	free(pDataBuffer);
-	
+	fclose(pFile);
+
 	return ERR_OK;
 }
+
+ALenum alGetBufferFormat(unsigned short usBitsPerSample, unsigned short usChannels)
+{
+	
+	if (usBitsPerSample == 8)
+	{
+		if (usChannels == 1)
+			return AL_FORMAT_MONO8;
+		else if (usChannels == 2)
+			return AL_FORMAT_STEREO8;
+	}
+	else if (usBitsPerSample == 16)
+	{
+		if (usChannels == 1)
+			return AL_FORMAT_MONO16;
+		else if (usChannels == 2)
+			return AL_FORMAT_STEREO16;
+	}
+	return AL_NONE;
+	
+}
+

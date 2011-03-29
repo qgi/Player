@@ -17,24 +17,32 @@
 ALuint uSource;
 ALuint uBuffer;
 
+//forward declarations
 void init();
 void play();
 
 
 int main (int argc, const char * argv[])
 {	
+	
 	ERR_IMPORT err;
 	
 	init();
 	
-	err = readWavFile("mmm.wav", uBuffer);
+	if (argc!=2)
+	{
+		printf("usage: wavplayer mywavfile.wav\n");
+		return -1;
+	}
+	
+	err = readWavFile(argv[1], uBuffer);
 	
 	if (err != ERR_OK)
 		return err;
 
 	play();
 	
-	printf("Press Enter to exit!");
+	printf("Press Enter to exit!\n");
 	scanf("...",NULL);
 	
     return 0;

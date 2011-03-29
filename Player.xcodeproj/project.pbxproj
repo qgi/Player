@@ -98,9 +98,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8DD76FA90486AB0100D96B5E /* Player */ = {
+		8DD76FA90486AB0100D96B5E /* wavplayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "Player" */;
+			buildConfigurationList = 1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "wavplayer" */;
 			buildPhases = (
 				8DD76FAB0486AB0100D96B5E /* Sources */,
 				8DD76FAD0486AB0100D96B5E /* Frameworks */,
@@ -110,7 +110,7 @@
 			);
 			dependencies = (
 			);
-			name = Player;
+			name = wavplayer;
 			productInstallPath = "$(HOME)/bin";
 			productName = Player;
 			productReference = 8DD76FB20486AB0100D96B5E /* Player */;
@@ -135,7 +135,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8DD76FA90486AB0100D96B5E /* Player */,
+				8DD76FA90486AB0100D96B5E /* wavplayer */,
 			);
 		};
 /* End PBXProject section */
@@ -208,7 +208,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "Player" */ = {
+		1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "wavplayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB928608733DD80010E9CD /* Debug */,

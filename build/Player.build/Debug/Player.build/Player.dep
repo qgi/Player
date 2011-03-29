@@ -1,7 +1,7 @@
-585d0c7b3f314bef34c3ecb8c329b9eb 5f65e38c0b62388fa5196a621e3185cd ffffffffffffffffffffffffffffffff 15664 /Users/qgi/Documents/Code/git/Player/build/Debug/Player
-0000000007cce5d90000000000003eea faaa13c64e20292342687b416022360d ffffffffffffffffffffffffffffffff 5664 /Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/main.o
-00000000000000000000000000000644 12414b811c26e48f2e75cbb60fa0c622 ffffffffffffffffffffffffffffffff 5196 /Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/Importer.o
-0000000007cce5e60000000000004355 b0b6543c27411bd658de5c4facab334d ffffffffffffffffffffffffffffffff 5576 /Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/FileHelpers.o
+585d0c7b3f33869634c3ecb8c329b8f4 5f65e38c0b62388fa5196a621e3185cd ffffffffffffffffffffffffffffffff 15680 /Users/qgi/Documents/Code/git/Player/build/Debug/Player
+00000000001054710000000000004e7e 12414b811c26e48f2e75cbb60fa0c622 ffffffffffffffffffffffffffffffff 5784 /Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/Importer.o
+0000000007dcb4270000000000007622 faaa13c64e20292342687b416022360d ffffffffffffffffffffffffffffffff 5612 /Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/main.o
+0000000007ce2d1000000000000042b8 b0b6543c27411bd658de5c4facab334d ffffffffffffffffffffffffffffffff 4484 /Users/qgi/Documents/Code/git/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/FileHelpers.o
 ffffffffffffffffffffffffffffffff 28cf49d5acb68fc1e9a8e67485186360 ffffffffffffffffffffffffffffffff 7756 /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/main.o
 ffffffffffffffffffffffffffffffff 2b37a3a4e9dc5fbc47de1d82472ff8f6 ffffffffffffffffffffffffffffffff 15448 /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Debug/Player
 0000000007d37d5e0000000000004329 ecf6a06f7a548e44b55ab00bab375e77 ffffffffffffffffffffffffffffffff 5148 /Users/qgi/Documents/Code/qgi/C/Player/Player/build/Player.build/Debug/Player.build/Objects-normal/x86_64/FileHelpers.o
